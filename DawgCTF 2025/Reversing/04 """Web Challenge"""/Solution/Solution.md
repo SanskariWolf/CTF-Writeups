@@ -1,4 +1,4 @@
-# DawgCTF - "Web Challenge" Writeup
+# DawgCTF - """Web Challenge""" (Reversing)
 
 We are given a single file, `webassembly.wasm`. The name "Web Challenge" seems a bit ironic given it's a WASM binary, but let's dive in.
 
@@ -135,4 +135,4 @@ DawgCTF{NO_3SC4P3_FROM_4SS3MBLY_W3BD3VS}
 The challenge involved reversing a C/C++ program compiled to WASM using Emscripten. The core logic was hidden inside an unnamed function and involved constructing the flag string character by character using a lookup table (LUT) indexed by values from another data array (IDX). Extracting these two data arrays and simulating the lookup process revealed the flag. The "SUFFAH WEBDEVS" message was just a distraction.
 ```
 **Flag:** `DawgCTF{NO_3SC4P3_FROM_4SS3MBLY_W3BD3VS}`
-```
+``` 
