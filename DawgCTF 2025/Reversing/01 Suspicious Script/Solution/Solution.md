@@ -1,7 +1,5 @@
 # DawgCTF - Suspicious Script (Reversing)
 
-This challenge provided a PowerShell script file, `homeworkHelper.ps1`, which was heavily obfuscated. The goal was to deobfuscate it and find the flag.
-
 ## Initial Analysis
 
 Running `strings` on the file revealed a large Base64 encoded string and a final execution command:
